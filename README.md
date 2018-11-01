@@ -1,5 +1,5 @@
 # django-ansible-template
-Simple and beautiful django ansible template for install project in local environment and servers
+Simple and beautiful django ansible template for install project in local environments and servers
 
 # How to use:
 ## Local installation

@@ -12,4 +12,6 @@ Simple and beautiful django ansible template for install project in local enviro
 ## Deploy remote server
 
 ## TODOs:
-* Automatically set env variables with ansible
+- [ ] Automatically set env variables with ansible
+- [ ] Test prepare remote server step
+- [ ] Test deploy remote server step

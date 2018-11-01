@@ -2,8 +2,9 @@
 app_name: APP_NAME
 
 # Deployer User and Groups
-deployer_user: LOCAL_USER
-deployer_group: LOCAL_USER
+deployer_user: USER_NAME
+deployer_group: USER_GROUP
+deployer_password: USER_PASSWORD
 
 # App Directory
 app_dir: /home/{{ deployer_user }}/{{ app_name }}

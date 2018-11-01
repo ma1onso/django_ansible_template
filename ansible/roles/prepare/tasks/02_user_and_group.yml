@@ -7,5 +7,6 @@
     comment: {{ deployer_user }}
     groups:
       - {{ deployer_group }}
+    password: {{ deployer_password }}
     createhome: yes
     home: /home/{{ deployer_user }}

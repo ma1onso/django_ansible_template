@@ -16,7 +16,7 @@ code_repository_url: git@DOMAIN.org:USER/PROJECT.git
 app_dir: /home/{{ deployer_user }}/{{ app_name }}
 
 # DB Configuration
-db_url: postgresql://{{ deployer_user }}:{{ db_password }}@localhost/{{ app_name }}
+db_url: postgresql://{{ db_user }}:{{ db_password }}@localhost/{{ app_name }}
 db_password: DB_PASSWORD
 db_name: "{{ app_name }}"
 db_user: "{{ deployer_user }}"

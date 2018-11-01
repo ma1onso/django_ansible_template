@@ -1,0 +1,7 @@
+##
+# Configure the local machine for the Django app
+##
+- include: 01_upgrade_system.yml
+- include: 02_user_and_group.yml
+- include: 03_ssh_keys.yml
+- include: 04_disable_insecure_authentication.yml

@@ -1,0 +1,11 @@
+##
+#
+##
+- name: Add an user and group
+  user:
+    name: {{ deployer_user }}
+    comment: {{ deployer_user }}
+    groups:
+      - {{ deployer_group }}
+    createhome: yes
+    home: /home/{{ deployer_user }}

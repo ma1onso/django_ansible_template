@@ -1,0 +1,16 @@
+##
+#
+##
+  tasks:
+  - name: Generate RSA ssh keys
+    command : ssh-keygen -t rsa -b 2048 -f ssh_keys/{{ stage }} -C "" -N ""
+    creates: ssh_keys/{{ stage }}
+
+  - name: Add key to authorized_keys
+    command: cp ssh_keys/{{ stage }}/id_rsa.pub ssh_keys/{{ stage }}/authorized_keys
+
+  - name: Upload keys to remote server
+    copy:
+      src: ssh_keys/{{ stage }}
+      dest: ~/.ssh
+      remote_src: yes

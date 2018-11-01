@@ -1,0 +1,8 @@
+##
+#
+##
+- name: apply initial configuration to server
+  hosts: all
+  user: DEPLOYER_USER
+  roles:
+    - prepare

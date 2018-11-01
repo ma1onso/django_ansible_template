@@ -2,7 +2,7 @@
 # This playbook deploys the whole app stack
 ##
 - name: apply common configuration to server
-  hosts: {{ stage }}
-  user: {{ deployer_user }}
+  hosts: staging
+  user: DEPLOYER_USER
   roles:
     - common

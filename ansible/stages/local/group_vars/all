@@ -1,0 +1,19 @@
+# App Name
+app_name: APP_NAME
+
+# Deployer User and Groups
+deployer_user: LOCAL_USER
+deployer_group: LOCAL_USER
+
+# App Directory
+app_dir: /home/{{ deployer_user }}/{{ app_name }}
+
+# DB Configuration
+db_url: postgresql://{{ deployer_user }}:{{ db_password }}@localhost/{{ app_name }}
+db_password: DB_PASSWORD
+db_name: "{{ app_name }}"
+db_user: "{{ deployer_user }}"
+
+# Application Dependencies Setup
+venv_dir: '/home/{{ deployer_user }}/.virtualenvs/{{ app_name }}'
+venv_python: '{{ venv_dir }}/bin/python3'

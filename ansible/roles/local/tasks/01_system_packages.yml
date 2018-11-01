@@ -1,0 +1,13 @@
+##
+# Update the APT package cache and install packages as a root user
+##
+- name: Install required packages
+  apt:
+    name:
+      - postgresql
+      - libpq-dev
+      - python3-dev
+      - virtualenvwrapper
+    state: latest
+  become: yes
+

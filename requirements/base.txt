@@ -1,0 +1,15 @@
+# core
+django==2.1.2
+
+# django apps
+
+# clients
+
+# database
+psycopg2-binary==2.7.5
+
+# unit test
+model-mommy==1.6.0
+
+# utilities
+django_extensions

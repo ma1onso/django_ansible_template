@@ -1,0 +1,15 @@
+##
+# Clone and pull the repo
+##
+- name: Set up git configuration
+  apt: name=git state=latest
+  become: yes
+
+#- name: Add bitbucket to know hosts
+#  raw: ssh bitbucket.org
+
+- name:  Clone or pull the latest code
+  git:
+    repo={{ code_repository_url }}
+    version=develop
+    dest={{ app_dir }}

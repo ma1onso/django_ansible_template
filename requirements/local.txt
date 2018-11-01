@@ -1,0 +1,8 @@
+-r base.txt
+
+# devops
+ansible==2.7.0
+
+# utilities
+ipython
+jupyter

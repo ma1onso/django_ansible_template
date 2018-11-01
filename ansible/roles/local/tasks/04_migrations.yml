@@ -1,0 +1,14 @@
+##
+# Run db migrations
+##
+- name: Make migrations
+  shell: "{{ venv_python }} {{ app_dir }}/manage.py makemigrations "
+  become: yes
+
+- name: Migrate database
+  django_manage:
+    app_path={{ app_dir }}
+    command=migrate
+    virtualenv={{ venv_dir }}
+
+  become: yes

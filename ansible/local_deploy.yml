@@ -1,0 +1,9 @@
+##
+# This playbook deploys the whole app stack
+##
+- name: apply common configuration to server
+  hosts: localhost
+  user: LOCAL_USER
+  roles:
+    - local
+  become: yes

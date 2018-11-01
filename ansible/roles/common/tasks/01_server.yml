@@ -1,0 +1,15 @@
+##
+# Update the APT package cache and install packages as a root user
+##
+- name: Install required packages
+  apt:
+    name:
+      - fail2ban
+      - python3-dev
+      - python-virtualenv
+      - python3-virtualenv
+      - python-dev
+      - gcc
+    state: latest
+  become: yes
+

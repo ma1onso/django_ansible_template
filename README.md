@@ -27,6 +27,6 @@ Simple and beautiful django ansible template for install project in local enviro
 add steps for encrypt this data.
 - [ ] Test prepare remote server step
 - [ ] Test deploy remote server step
-- [ ] Not use --ask-vault-pass for automatic deployment.
+- [ ] Skip --ask-vault-pass for automatic deployment.
 - [ ] Only use one playbook for deploy remote servers
 - [ ] Replace env.j2 with another ansible feature

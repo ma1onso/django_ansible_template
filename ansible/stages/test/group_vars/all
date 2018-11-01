@@ -5,6 +5,9 @@ app_name: APP_NAME
 deployer_user: DEPLOYER_USER
 deployer_group: DEPLOYER_GROUP
 
+# Stage
+stage: test
+
 # SSH Keys Directory
 ssh_dir: ssh-keys/STEP
 

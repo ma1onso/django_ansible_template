@@ -1,2 +1,2 @@
-[common]
+[staging]
 REMOTE_IP ansible_python_interpreter=/usr/bin/python3

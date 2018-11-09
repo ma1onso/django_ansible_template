@@ -3,6 +3,8 @@ Simple and beautiful django ansible template for install project in local enviro
 
 # How to use:
 
+`django-admin.py startproject --template=https://github.com/AlonsoEnrique/django_ansible_template/archive/master.zip PROJECT_NAME`
+
 **Note**: Encrypt all sensible data with `ansible-vault encrypt_string STRING` and put this in _all_ files.
 [Example](https://stackoverflow.com/questions/30209062/ansible-how-to-encrypt-some-variables-in-an-inventory-file-in-a-separate-vault/44241343#44241343)
 

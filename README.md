@@ -11,7 +11,7 @@ Simple and beautiful django ansible template for install project in local enviro
 
 ## Local installation
 * [Install ansible](https://docs.ansible.com/ansible/2.7/installation_guide/intro_installation.html#installing-the-control-machine)
-* Set `ansible/local/group_vars/all` and `ansible/local/hosts` values.
+* Set `ansible/stages/local/group_vars/all` and `ansible/local/hosts` values.
 * run `sh scripts/install.sh`
 
 ## Prepare remote server

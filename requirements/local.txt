@@ -1,7 +1,7 @@
 -r base.txt
 
 # devops
-ansible==2.10.0
+ansible==2.10.7
 
 # utilities
 ipython

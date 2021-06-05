@@ -1,5 +1,5 @@
 # core
-django==2.2.20
+django==2.2.21
 
 # django apps
 
